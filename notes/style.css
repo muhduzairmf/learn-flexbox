@@ -1,0 +1,83 @@
+body {
+    font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    /* Adjust the size of the box (CSS Box Model) based on their border */
+    margin: 0;
+    padding: 0;
+    /* Reset the current margin and padding */
+}
+
+.flex-container {
+    background-color: rgb(180, 180, 180);
+    height: 500px;
+    display: flex;
+    /* //Set display as flexbox */
+
+    /* justify-content: left; */
+    justify-content: center;
+    /* justify-content: right; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between;  */
+    /* justify-content: space-evenly;  */
+    /* //Justify content is at main axis (horizontal) */
+
+    /* align-items: start; */
+    align-items: center;
+    /* align-items: end; */
+    /* Align items is at cross axis (vertical) */
+
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* //Row is default, main axis is horizontal, cross axis is vertical */
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* //Column is set the main axis as vertical, cross axis as horizom */
+
+    flex-wrap: wrap;
+    /* Flex wrap is make the flex item stay at current height or weight, but if it is not suit on the screen, it will go down to the next line */
+}
+
+.item {
+    /* width: 100px; */
+    /* flex-basis: 100px; */
+    /* //Flex basis is same as width */
+
+    height: 100px;
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+
+    flex: 1 0 0; /* or flex: 1; */
+    /* flex is the simplest way for flex-grow + flex-shrink flex-basis */
+}
+
+/* .item:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 1;
+} */
+
+/* .item:nth-of-type(2) {
+    flex-grow: 2;
+    flex-shrink: 2;
+} */
+
+/* .item:nth-of-type(3) {
+    //Select the third children
+
+    align-self: end;
+    //Align self is same as align items, but for individual flex items only
+
+    flex-grow: 1;
+} */
+
+/* FOR FLEX-GROW */
+/* Flex grow is when the size is more than its width or flex-basis, so it will grow based on the size that will be given. Item 1 and 3 is 1, so it will take 1/4 of the screen. Item 2 will take 1/2 of the screen. Moreover, it will also useful if  */
+
+/* FOR FLEX-SHRINK */
+/* Flex shrink is when the size is less than its width or flex-basis, so it will shrink based on the size that will be given. */
