@@ -31,7 +31,7 @@ To build the original source code into JavaScript bundle, type
 	npm run build
 ```
 
-To run the Feedback App in distribution/preview mode, type
+To run this website in distribution/preview mode, type
 
 ```Shell
 	npm run preview
